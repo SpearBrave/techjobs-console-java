@@ -58,7 +58,7 @@ public class TechJobs {
 
                 // What is their search term?
                 System.out.println("\nsearch term: ");
-                String searchTerm = in.nextLine().toLowerCase();
+                String searchTerm = in.nextLine();
 
                 if (searchField.equals("all")) {
                     printJobs(JobData.findByValue(searchTerm));

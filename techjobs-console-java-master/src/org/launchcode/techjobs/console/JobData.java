@@ -70,7 +70,7 @@ public class JobData {
         ArrayList<HashMap<String, String>> jobs = new ArrayList<>();
         for (HashMap<String, String> row: allJobs) {
             for (String key : row.keySet())
-                if (row.get(key).contains(value.toLowerCase())) {
+                if (row.get(key).toLowerCase().contains(value.toLowerCase())) {
                     jobs.add(row);
                     break;
 
